@@ -8,7 +8,7 @@
     list-style: none;
 }
 .container{
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 .btn_primary{
@@ -17,6 +17,7 @@
     background: #FF900E;
     font-size: 1.25rem;
     font-weight: 600;
+    cursor: pointer;
     border: none;
     border-radius: 8px;
     -webkit-border-radius:;
@@ -31,7 +32,7 @@
 /*=====================
  nav style starts here
 =======================*/
-header{
+#header{
     background: rgba(255, 144, 14, 0.10);
 }
 .nav{
@@ -65,7 +66,6 @@ header{
     color:  #131313;
     text-align: center;
     font-size: 4rem;
-    line-height: 64px;
     font-weight: 700;
     /* padding: 0 200px; */
 }
@@ -73,6 +73,45 @@ header{
     color:#727272;
     text-align: center;
     font-size: 1rem;
-    line-height: 24px;
     padding: 32px 220px;
+}
+.banner_image{
+    padding: 50px 0;
+    width: 100%;
+    object-fit: fill;
+}
+.banner_btn{
+    text-align: center;
+}
+
+/*========================================
+ responsive media quary for mobile devices
+==========================================*/
+@media screen and (max-width:575.98px) {
+    .container{
+        padding: 0 20px;
+    }
+    .nav{
+        flex-direction: column;
+    }
+    .nav_container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .banner_descripsion{
+        padding: 20px 0;
+    }
+    /* ========== */
+}
+/*========================================
+ responsive media quary for teblet devices
+==========================================*/
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .container{
+        padding: 0 30px;
+    }
+    .banner_descripsion{
+        padding: 30px 0;
+    }
+    /* =========== */
 }
