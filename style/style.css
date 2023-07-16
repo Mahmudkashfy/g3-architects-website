@@ -4,6 +4,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
     list-style: none;
 }
@@ -34,12 +35,12 @@
 =======================*/
 #header{
     background: rgba(255, 144, 14, 0.10);
+    padding: 50px 0;
 }
 .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 0;
 }
 .nav_title{
     color: #131313;
@@ -67,7 +68,7 @@
     text-align: center;
     font-size: 4rem;
     font-weight: 700;
-    /* padding: 0 200px; */
+    padding-top: 100px;
 }
 .banner_descripsion{
     color:#727272;
@@ -76,9 +77,9 @@
     padding: 32px 220px;
 }
 .banner_image{
-    padding: 50px 0;
     width: 100%;
     object-fit: fill;
+    padding-top: 50px;
 }
 .banner_btn{
     text-align: center;
@@ -89,17 +90,32 @@
 ==========================================*/
 @media screen and (max-width:575.98px) {
     .container{
-        padding: 0 20px;
+        padding:0 20px;
+    }
+    #header{
+        padding: 20px 0;
     }
     .nav{
         flex-direction: column;
+        padding: 20px 0;
+    }
+    .nav_title{
+        font-size: 1.5rem;
     }
     .nav_container{
-        flex-direction: column;
+        /* flex-direction: column; */
         gap: 20px;
+        padding-top: 20px;
+    }
+    .banner_title{
+        font-size: 2rem;
+        padding-top: 20px;
     }
     .banner_descripsion{
         padding: 20px 0;
+    }
+    .banner_image{
+        padding-top: 20px;
     }
     /* ========== */
 }
@@ -109,6 +125,9 @@
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .container{
         padding: 0 30px;
+    }
+    .nav_container{
+        gap: 20px;
     }
     .banner_descripsion{
         padding: 30px 0;
