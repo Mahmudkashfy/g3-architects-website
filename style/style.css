@@ -7,10 +7,20 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: 'Work Sans', sans-serif;
 }
 .container{
     max-width: 1140px;
     margin: 0 auto;
+}
+.sec_title{
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+.sec_description{
+    font-size: 1rem;
+    color: #727272;
 }
 .btn_primary{
     padding: 15px 35px;
@@ -70,20 +80,63 @@
     font-weight: 700;
     padding-top: 100px;
 }
-.banner_descripsion{
-    color:#727272;
+#banner > .sec_description{
     text-align: center;
-    font-size: 1rem;
-    padding: 32px 220px;
+    padding: 32px 130px;
 }
 .banner_image{
     width: 100%;
+    height: 100%;
     object-fit: fill;
     padding-top: 50px;
 }
 .banner_btn{
     text-align: center;
 }
+/*======================
+ banner style ends here
+========================*/
+
+/*=========================
+ feature style starts here
+===========================*/
+#feature{
+    padding-top: 85px;
+    display: flex;
+    align-items: center;
+    gap: 75px;
+}
+.feature_teem_image {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.feature_teem_image img{
+    width: 100%;
+    object-fit: fill;
+}
+.feature_contant{
+    width: 50%;
+}
+.feature_title{
+    color: #727272;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+.ftr_span_1{
+    color:  #727272;
+}
+.ftr_span_2{
+    color:  #FF900E;
+}
+#feature .sec_description{
+    padding: 24px 0 32px;
+    
+}
+/*=======================
+ feature style ends here
+=========================*/
 
 /*========================================
  responsive media quary for mobile devices
@@ -95,6 +148,11 @@
     #header{
         padding: 20px 0;
     }
+    .sec_title{
+        font-size: 2rem;
+    }
+    
+    /* nav and banner section */
     .nav{
         flex-direction: column;
         padding: 20px 0;
@@ -103,20 +161,38 @@
         font-size: 1.5rem;
     }
     .nav_container{
-        /* flex-direction: column; */
         gap: 20px;
-        padding-top: 20px;
+        padding-top: 10px;
     }
     .banner_title{
         font-size: 2rem;
         padding-top: 20px;
     }
-    .banner_descripsion{
+    #banner > .sec_description{
         padding: 20px 0;
     }
     .banner_image{
+        max-width: 100%;
         padding-top: 20px;
     }
+
+    /* freture sectin */
+    #feature{
+        padding-top: 30px;
+        flex-direction: column;
+        gap: 0;
+        align-items: normal;
+    }
+    
+    .feature_teem_image{
+        width: 100%;
+        gap: 10px;
+    }
+    .feature_contant{
+        padding-top: 30px;
+        width: 100%;
+    }
+    
     /* ========== */
 }
 /*========================================
@@ -129,8 +205,14 @@
     .nav_container{
         gap: 20px;
     }
-    .banner_descripsion{
+    .banner_title{
+        padding-top: 50px;
+    }
+    #banner > .sec_description{
         padding: 30px 0;
+    }
+    #feature{
+        padding-top: 50px;
     }
     /* =========== */
 }
